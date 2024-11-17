@@ -70,7 +70,7 @@ export default function SignUpUserSteps() {
           </Link>
         </TutorialStep>
       ) : null}
-      <TutorialStep title="Sign up your first user">
+      <TutorialStep title="Register or Sign In">
         <p>
           Head over to the{" "}
           <Link
@@ -79,8 +79,25 @@ export default function SignUpUserSteps() {
           >
             Sign up
           </Link>{" "}
-          page and sign up your first user. It's okay if this is just you for
-          now. Your awesome idea will have plenty of users later!
+          page and sign up your first user. If you already know your credentials go to the {""}
+          <Link
+              href="/sign-in"
+              className="font-bold hover:underline text-foreground/80"
+          >
+            Sign in
+          </Link>{" "}
+          page.
+        </p>
+      </TutorialStep>
+      <TutorialStep title="Have fun!">
+        <p>
+          Search the images using the {" "}
+          <Link
+              href="https://unsplash.com/"
+              className="font-bold hover:underline text-foreground/80"
+          >
+            Unsplash API
+          </Link>{" "}
         </p>
       </TutorialStep>
     </ol>
